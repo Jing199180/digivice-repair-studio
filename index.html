@@ -262,13 +262,14 @@
             <div class="cta-text-box">
               <h2 class="heading-secondary">讓我們解決你遇到的問題!</h2>
               <p class="cta-text">寄送表單後，我們會盡快回復你!</p>
-              <form class="cta-form">
+              <form class="cta-form" name="contact" netlify>
                 <div>
                   <label for="name">Name</label>
                   <input
                     id="name"
                     type="text"
                     placeholder="八神太一"
+                    name="name"
                     required
                   />
                 </div>
@@ -279,13 +280,14 @@
                     id="email"
                     type="email"
                     placeholder="email@example.com"
+                    name="email"
                     required
                   />
                 </div>
 
                 <div>
-                  <label for="problem-description">problem-description</label>
-                  <select id="problem-description" required>
+                  <label for="problem-description">Problem description</label>
+                  <select id="problem-description" name="problem" required>
                     <option value="">你的暴龍機哪裡有問題?</option>
                     <option value="case">機殼</option>
                     <option value="screen">螢幕</option>

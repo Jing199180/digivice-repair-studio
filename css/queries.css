@@ -207,12 +207,26 @@
     bottom: -20%;
   }
 
+  .slide-btn {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.8rem;
+  }
+
   .slide-btn--left {
     left: 2rem;
   }
 
   .slide-btn--right {
     right: 2rem;
+  }
+
+  .container-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    display: none;
   }
 }
 

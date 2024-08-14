@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="
+    Digivice is a workshop dedicated to providing repair services for Digimon device enthusiasts. With several years of experience in repairs, it has established itself as a reliable service provider in the field."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./img/logo-icon.png" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Digivice Repair &mdash; Bring back your childhood memory</title>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header-nav" href="#">
+        <img class="logo" alt="DR logo" src="./img/logo.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#about">About me</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#cases">Cases</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Contact us</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              數碼暴龍機<span class="emphasis">維修</span>
+            </h1>
+            <p class="hero-description">
+              透過專業的維修服務，讓你珍貴的兒時回憶能繼續保存下來
+            </p>
+
+            <div class="memory">
+              <img
+                src="./img/memory2.png"
+                class="memory-img margin-right-sm"
+                alt="Memory picture 2"
+              />
+              <a class="btn btn--full margin-right-sm" href="#cta"
+                >Buy memory</a
+              >
+              <a class="btn btn--outline" href="#how">Learn more &darr;</a>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img class="hero-img" src="./img/hero.png" alt="Digivice" />
+          </div>
+        </div>
+      </section>
+      <section class="section-about-me" id="about">
+        <div class="container">
+          <span class="subheading">About me</span>
+          <h2 class="heading-secondary">
+            Digivice Repair多年的維修經驗，把你的回憶找回來
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid-center-v">
+          <!--FEATURE 1-->
+          <div class="feature-text-box">
+            <!-- <p class="feature-number">01</p> -->
+            <h3 class="heading-tertiary">品質</h3>
+            <p class="feature-description">
+              同為數碼暴龍機的收藏者，產品服務一貫重視品質，以客戶滿意度為首要目標，提供全方位的支持和解決方案。
+            </p>
+          </div>
+          <div class="feature-img-box">
+            <img
+              class="feature-img"
+              src="./img/feature-img-1.png"
+              alt="Digivice"
+            />
+          </div>
+          <!--FEATURE 2-->
+          <div class="feature-img-box">
+            <img
+              class="feature-img"
+              src="./img/feature-img-2.png"
+              alt="Digivice"
+            />
+          </div>
+          <div class="feature-text-box">
+            <!-- <p class="feature-number">02</p> -->
+            <h3 class="heading-tertiary">專業</h3>
+            <p class="feature-description">
+              提供一站式服務，全面解決各種暴龍機的問題。不論是外殼更換、舊機翻新，還是電路調整，我們都能為您提供專業的服務。
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-how-it-works" id="how">
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="heading-secondary">
+            簡單快速的維修流程，迅速處理你的問題
+          </h2>
+        </div>
+        <div class="container grid grid--3-cols">
+          <div class="step-box">
+            <div class="step-img-box">
+              <img
+                class="step-img"
+                src="./img/how-1.jpg"
+                alt="Filling out a form"
+              />
+              <span class="step-number">01</span>
+              <p class="step-title">填寫表格</p>
+              <p class="step-description">
+                輕鬆填寫我們的維修申請表格，提供您的聯繫信息和數碼暴龍機的問題描述。
+              </p>
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-img-box">
+              <img
+                class="step-img"
+                src="./img/how-2.jpg"
+                alt="Filling out a form"
+              />
+              <span class="step-number">02</span>
+              <p class="step-title">報價確認</p>
+              <p class="step-description">
+                我們將根據您的問題評估維修費用並與您確認相關報價。
+              </p>
+            </div>
+          </div>
+          <div class="step-box">
+            <div class="step-img-box">
+              <img
+                class="step-img"
+                src="./img/how-3.jpg"
+                alt="Filling out a form"
+              />
+              <span class="step-number">03</span>
+              <p class="step-title">維修測試</p>
+              <p class="step-description">
+                我們將專業維修您的數碼暴龍機並進行全面測試，確保功能一切正常。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-cases" id="cases">
+        <div class="container">
+          <span class="subheading">Cases</span>
+          <h2 class="heading-secondary">看看我們的維修成果</h2>
+        </div>
+
+        <div class="container slider">
+          <div class="slide fade">
+            <img
+              class="slide-img"
+              src="./img/slide-1.png"
+              alt="Digivices with blue cases"
+            />
+            <div class="slide-text-box">
+              <p class="slide-text-number">1/6</p>
+            </div>
+          </div>
+          <div class="slide fade">
+            <img
+              class="slide-img"
+              src="./img/slide-2.png"
+              alt="Refurbished device"
+            />
+            <div class="slide-text-box">
+              <p class="slide-text-number">2/6</p>
+            </div>
+          </div>
+          <div class="slide fade">
+            <img
+              class="slide-img"
+              src="./img/slide-3.png"
+              alt="Refurbished device"
+            />
+            <div class="slide-text-box">
+              <p class="slide-text-number">3/6</p>
+            </div>
+          </div>
+          <div class="slide fade">
+            <img
+              class="slide-img"
+              src="./img/slide-4.png"
+              alt="Refurbished device"
+            />
+            <div class="slide-text-box">
+              <p class="slide-text-number">4/6</p>
+            </div>
+          </div>
+          <div class="slide fade">
+            <img
+              class="slide-img"
+              src="./img/slide-5.png"
+              alt="Refurbished device"
+            />
+            <div class="slide-text-box">
+              <p class="slide-text-number">5/6</p>
+            </div>
+          </div>
+          <div class="slide fade">
+            <img
+              class="slide-img"
+              src="./img/slide-6.png"
+              alt="Refurbished device"
+            />
+            <div class="slide-text-box">
+              <p class="slide-text-number">6/6</p>
+            </div>
+          </div>
+          <button class="slide-btn slide-btn--left">&larr;</button>
+          <button class="slide-btn slide-btn--right">&rarr;</button>
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+      <section class="section-cta" id="cta">
+        <div class="container tab-container">
+          <button
+            class="btn tab-btn tab-btn-1 margin-right-sm tab-btn--active"
+            data-tab="1"
+          >
+            聯絡我們
+          </button>
+          <button class="btn tab-btn tab-btn-2" data-tab="2">購買翻新機</button>
+        </div>
+        <div class="container">
+          <div class="container container-cta cta-card-1 container-cta--active">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">讓我們解決你遇到的問題!</h2>
+              <p class="cta-text">寄送表單後，我們會盡快回復你!</p>
+              <form class="cta-form">
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="八神太一"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="email@example.com"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="problem-description">problem-description</label>
+                  <select id="problem-description" required>
+                    <option value="">你的暴龍機哪裡有問題?</option>
+                    <option value="case">機殼</option>
+                    <option value="screen">螢幕</option>
+                    <option value="not-working">無法正常運作</option>
+                  </select>
+                </div>
+                <button class="btn btn--form">Submit now</button>
+              </form>
+            </div>
+            <div class="cta-img-box">
+              <img class="cta-img" src="./img/logo-cta.png" alt="logo-image" />
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="container container-cta cta-card-2">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">想買翻新機嗎?</h2>
+              <p class="cta-text">快來我的蝦皮賣場，找找有沒有你的童年回憶</p>
+              <div class="cta-shop">
+                <div>
+                  <p class="shop-name">數碼小舖</p>
+                  <a
+                    class="btn btn--form"
+                    href="https://shopee.tw/kaocjeff?entryPoint=ShopBySearch&searchKeyword=%E6%95%B8%E7%A2%BC%E5%B0%8F%E8%88%96"
+                    target="_blank"
+                    >Go now &rarr;</a
+                  >
+                </div>
+                <div class="shop-img-box"></div>
+              </div>
+            </div>
+            <div class="cta-img-box">
+              <img class="cta-img" src="./img/logo-cta.png" alt="logo-image" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--3-cols">
+        <div class="logo-col">
+          <a class="header-nav" href="#">
+            <img class="footer-logo" alt="DR logo" src="./img/logo.png" />
+          </a>
+
+          <p class="copyright">
+            Copyright &copy; 2024 by DR. All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="contact">Contact</p>
+          <a href="mailto:kaoc26804383@gmail.com">kaoc26804383@gmail.com</a>
+        </div>
+        <div class="social-col">
+          <p class="social">Social</p>
+          <a
+            href="https://www.facebook.com/share/g/wH8wRDW7tPo8ofgN/?mibextid=K35XfPk"
+            target="_blank"
+            >Facebook</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

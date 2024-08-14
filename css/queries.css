@@ -1,0 +1,222 @@
+/******************************/
+/* BELOW 1344px (Smaller Desktops) */
+/******************************/
+
+@media (max-width: 84rem) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 6.2rem;
+  }
+}
+
+/******************************/
+/* BELOW 1200px (Landscape Tablets) */
+/******************************/
+
+@media (max-width: 75rem) {
+  html {
+    /*9px / 16px = 0.56 = 56%*/
+    font-size: 56%;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 5.2rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .grid {
+    column-gap: 2.4rem;
+    row-gap: 8rem;
+  }
+
+  .shop-name {
+    margin-bottom: 7.55rem;
+  }
+}
+
+/******************************/
+/* BELOW 944px (Tablets) */
+/******************************/
+
+@media (max-width: 59rem) {
+  html {
+    /*8px / 16px = 0.5 = 50%*/
+    font-size: 50%;
+  }
+
+  /*MOBILE NAVIGATION*/
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+    background-color: #fff;
+    transition: all 0.5s ease-in;
+
+    /* 1) Hide it visually*/
+    opacity: 0;
+    /* 2) Make it unaccessible to mouse and keyboard*/
+    pointer-events: none;
+    /* 3) Hide it from screen readers*/
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .memory {
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-name {
+    margin-bottom: 23.8rem;
+  }
+}
+
+/******************************/
+/* BELOW 704px (Smaller Tablets) */
+/******************************/
+
+@media (max-width: 44rem) {
+  .feature-img {
+    width: 50%;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 6.4rem;
+  }
+
+  .step-box {
+    width: 50%;
+  }
+  .step-img {
+    width: 100%;
+  }
+
+  .logo-col {
+    text-align: center;
+  }
+
+  .address-col {
+    text-align: center;
+  }
+
+  .social-col {
+    text-align: center;
+  }
+}
+
+/******************************/
+/* BELOW 496px (Mobile) */
+/******************************/
+
+@media (max-width: 31rem) {
+  html {
+    /*7px / 16px = 0.438 = 43.8%*/
+    font-size: 43.8%;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .heading-tertiary {
+    font-size: 4.4rem;
+  }
+
+  .step-title {
+    margin-bottom: 1.6rem;
+    font-size: 5.2rem;
+  }
+
+  .dots {
+    bottom: -20%;
+  }
+
+  .slide-btn--left {
+    left: 2rem;
+  }
+
+  .slide-btn--right {
+    right: 2rem;
+  }
+}
+
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128*/

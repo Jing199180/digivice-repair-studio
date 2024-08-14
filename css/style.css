@@ -202,6 +202,10 @@ default: 0
   display: inline-block;
 }
 
+.hidden {
+  display: none;
+}
+
 .hero-img {
   width: 100%;
 }

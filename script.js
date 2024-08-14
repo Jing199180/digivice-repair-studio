@@ -188,3 +188,27 @@ tabsContainer.addEventListener("click", function (e) {
     .querySelector(`.cta-card-${clicked.dataset.tab}`)
     .classList.add("container-cta--active");
 });
+
+// memoryImg component
+
+//選取
+const imgs = document.querySelectorAll(".memory-img");
+
+const memoryImg = function () {
+  let curImg = 0;
+  console.log(imgs);
+
+  const goToImg = function (imgIndex) {
+    imgs.forEach((img, index) => {
+      if (index === imgIndex) img.classList.add("hidden");
+      else img.classList.remove("hidden");
+    });
+  };
+
+  setInterval(function () {
+    goToImg(curImg);
+    curImg = (curImg + 1) % imgs.length;
+  }, 1000);
+};
+
+memoryImg();
